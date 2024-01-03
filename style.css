@@ -1,0 +1,403 @@
+/* Reset des styles par défaut */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  /* background-color: #9bb8cd; */
+  background-color: #0b2545;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #fff7d4;
+}
+header a:hover {
+  color: #0b2545;
+  background-color: #fff;
+  padding: 10px;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+header img {
+  width: 150px;
+  padding: 0 20px;
+  border-radius: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  /* display: inline; */
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  background-color: #0b2545;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+main {
+  padding: 20px;
+}
+.white-p {
+  color: black;
+  font-size: 20px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.intro a {
+  text-decoration: none;
+  background: #dbcc95;
+  color: #fff;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.news {
+  width: 500px;
+  display: flex;
+  background-color: #43766c;
+  text-align: center;
+  border-radius: 20px;
+  gap: 20px;
+}
+.news img {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.fete2 {
+  display: block;
+  gap: 20px;
+  padding: 20px;
+  margin: 10px;
+}
+.fete2 h2 {
+  color: #8da98dca;
+}
+.fete2 p {
+  color: #f8fae5;
+}
+.fete2 a {
+  background-color: #b19470;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 10px;
+  color: #43766c;
+}
+
+.news div {
+  width: 100%;
+}
+.news {
+  box-shadow: 3px 5px 5px;
+  opacity: 0.93;
+  background-color: #0b2545;
+}
+
+.main1 {
+  background-image: url(etudiants-connaissant-bonne-reponse.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* backdrop-filter: blur(10px); */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bottom-footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #555;
+}
+footer a:hover {
+  background-color: white;
+  color: black;
+  padding: 6px;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+/* main2 */
+.container {
+  /* background-color: blue; */
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: grid;
+  /* grid-template-columns: 100px,100px; */
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  gap: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+.child1,
+.child2,
+.child3 {
+  background-color: #0b2545;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 7px 5px 3px;
+}
+.main2 p {
+  color: white;
+}
+.main2 h1 {
+  /* color: #750e21; */
+  color: #8da98dca;
+}
+.main2 i {
+  font-size: 50px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  header ul {
+    position: relative;
+    align-items: center;
+  }
+  /* hnaaaaaaaaaaaa */
+  header ul {
+    display: none;
+    background-color: #9bb8cd;
+  }
+  header i:hover + ul {
+    display: block;
+  }
+  header ul:hover {
+    display: block;
+  }
+}
+.fa-solid {
+  color: #0b2545;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+.main2 body {
+  background: #091540;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* mai3 apropos */
+
+.h1-main3 {
+  font-family: fantasy;
+  color: #750e21;
+  text-align: center;
+  text-decoration: underline;
+}
+.main3 {
+  /* display: flex; */
+  gap: 20px;
+}
+.apropos {
+  background-color: #9bb8cd;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  border-radius: 20px;
+  border: blue 1px solid;
+  box-shadow: 7px 5px 4px;
+}
+.apropos div {
+  /* width: 100%; */
+  padding: 20px;
+}
+
+.pole1 h2 {
+  font-family: monospace;
+  font-size: 26px;
+}
+.apropos h3 {
+  font-family: cursive;
+  font-size: 16px;
+}
+.apropos img {
+  width: 300px;
+  height: 70%;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.apropos .apropos p {
+  font-size: 12px;
+}
+
+/* apropos2 */
+.pole2 {
+  background-color: #9bb8cd;
+  display: flex;
+  gap: 10px;
+  border-radius: 20px;
+  border: blue 1px solid;
+  box-shadow: 7px 5px 4px;
+}
+.pole2 div {
+  padding: 20px;
+}
+.apropos2 img {
+  width: 300px;
+  height: 95%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.apropos2 h3 {
+  font-family: cursive;
+  font-size: 16px;
+}
+
+/* card programme */
+
+.btn-help {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ease-in-out;
+}
+.btn-help:hover {
+  background: #eee;
+  border-radius: 15px;
+  width: 250px;
+  height: 350px;
+}
+.btn-help i {
+  position: absolute;
+}
+.btn-help:hover {
+  opacity: 0;
+}
+.btn-help i {
+  font-size: 30px;
+  color: #000;
+}
+.text-section {
+  padding: 20px;
+  opacity: 0;
+}
+
+/* main4 */
+.services .parent .service1,
+.service2,
+.service3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  background-color: #eee;
+  padding: 40px;
+  margin: 30px;
+}
+.services h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* location */
+.location {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.location h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* last main */
+.last img {
+  width: 400px;
+  height: 400px;
+  gap: 40px;
+  border-radius: 15px;
+}
+.last {
+  background: linear-gradient(#8da98dca, #0b2545);
+}
