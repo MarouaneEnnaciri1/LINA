@@ -401,3 +401,24 @@ footer a:hover {
 .last {
   background: linear-gradient(#8da98dca, #0b2545);
 }
+
+/* js */
+.black-color-dark {
+  background-color: #1f2544;
+}
+body {
+  transition: 2s;
+}
+.nuit-mode-body {
+  background-color: #000;
+}
+
+/* button style */
+header button {
+  border: none;
+  background-color: transparent;
+}
+#switch {
+  color: #9bb8cd;
+  font-size: 25px;
+}
