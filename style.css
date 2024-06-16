@@ -1,424 +1,193 @@
-/* Reset des styles par défaut */
-body,
-h1,
-h2,
-h3,
-p,
-ul {
-  margin: 0;
+* {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-/* Styles généraux */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+nav {
+  background-color: #05204F;
+  padding: 10px 20%; /* Ajout de padding pour un espace autour du contenu */
+  box-shadow: 4px 8px 8px #8b8d91;
+  z-index: 1; /* Ombre plus foncée */
+  text-align: center;
 }
-
-header {
-  /* background-color: #9bb8cd; */
-  background-color: #0b2545;
-  padding: 20px;
+.navbar-brand {
+  color: #DF3639;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  color: #FEFEFE; /* Couleur du texte du toggle */
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; /* Centre le contenu verticalement */
+  
+}
+
+.navbar-toggler:hover {
+  color: #DF3639; /* Couleur du texte du toggle au survol */
+}
+.navbar-nav {
+  align-items: center; /* Centrer verticalement les éléments */
+}
+.navbar-nav .nav-link {
+  color: #FEFEFE;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+.navbar-nav .nav-link:hover {
+  color: #DF3639;
+  text-decoration: underline;
+}
+.logo {
+  width: 100px;
+  border-radius: 50%;
+}
+footer {
+  z-index: 0;
+  background-color: #05204F;
+  color: #FEFEFE; /* Couleur du texte dans le footer */
+}
+
+
+.butt {
+  align-items: center;
+  color: #FEFEFE;
+  background-color: #05204F;
+  border: 0;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px #05204F;
+  align-items: center;
+
+}
+
+.butt:hover {
+  color: #f48183;
+  box-shadow: 6px 6px 12px #05204F;
+}
+.card {
+  box-shadow: 6px 6px 12px #D9DCE4;
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 20px; 
+  height: 100%;
+  display: flex;
+  flex-direction: column; 
+}
+.card:hover {
+  box-shadow: 10px 10px 18px #D9DCE4;
+}
+
+
+.card-body {
+  flex: 1;
+
+}
+
+
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Assure que le bouton est au-dessus des autres éléments */
+}
+.whatsapp-button a {
+  display: block;
+  width: 65px; /* Largeur du bouton */
+  height: 65px; /* Hauteur du bouton */
+  background-color: #25D366; /* Couleur de fond de WhatsApp */
+  border-radius: 50%; /* Pour rendre le bouton rond */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  text-align: center;
+  line-height: 60px; /* Pour centrer l'icône verticalement */
+}
+.whatsapp-button img {
+  width: 40px; /* Taille de l'icône WhatsApp */
+  margin-top: 0%; /* Ajustement pour centrer verticalement l'icône */
+}
+.custom-card {
+  height: 600px; 
+}
+
+.btn0:hover{
+  color: #DF3639;
+  background-color: #FEFEFE;
+}
+
+
+.btn-show-more {
+  display: none; /* Initialement caché */
+}
+
+
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.5); /* Fond blanc avec opacité de 50% */
+  width: 100%; /* Largeur de 100% */
+   padding: 10px;/* Rembourrage pour un espace autour du texte */
+  text-align: center; /* Centrer le texte à l'intérieur de la légende */
+  margin-left: -15%;
+  position: absolute;
+  justify-content: center;
   align-items: center;
 }
 
-header h1 {
-  color: #fff7d4;
+.carousel-caption h5,
+.carousel-caption p {
+  color: #000; /* Couleur du texte (noir) */
 }
-header a:hover {
-  color: #0b2545;
-  background-color: #fff;
-  padding: 10px;
-  transition: 0.3s;
+
+.butt2 {
+  color: #FEFEFE;
+  background-color: #DF3639;
+  border: 0;
+  width: 9rem;
+  height: 3rem;
   border-radius: 20px;
-}
-header img {
-  width: 150px;
-  padding: 0 20px;
-  border-radius: 100%;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
+  box-shadow: 1px 1px 2px #c17e7f;
+  margin-bottom: 15px; /* Espacement en haut du bouton */
+  margin-left: 70px; /* Déplace le bouton complètement à droite */
+ 
 }
 
-nav ul li {
-  /* display: inline; */
-  margin-right: 20px;
-}
 
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  background-color: #0b2545;
-  padding: 10px;
-  border-radius: 20px;
-}
+/* contact */
 
-main {
+.contact-info {
+  background-color: #f0f0f0;
   padding: 20px;
-}
-.white-p {
-  color: black;
-  font-size: 20px;
-}
-
-.intro {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  margin: 0 auto; /* Centrer horizontalement */
   text-align: center;
-  margin-bottom: 30px;
-}
-.intro a {
-  text-decoration: none;
-  background: #dbcc95;
-  color: #fff;
-  padding: 7px;
-  border-radius: 10px;
 }
 
-.news {
-  width: 500px;
-  display: flex;
-  background-color: #43766c;
-  text-align: center;
-  border-radius: 20px;
-  gap: 20px;
-}
-.news img {
-  width: 100%;
-  height: 100%;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
-}
-.fete2 {
-  display: block;
-  gap: 20px;
-  padding: 20px;
-  margin: 10px;
-}
-.fete2 h2 {
-  color: #8da98dca;
-}
-.fete2 p {
-  color: #f8fae5;
-}
-.fete2 a {
-  background-color: #b19470;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 10px;
-  color: #43766c;
-}
-
-.news div {
-  width: 100%;
-}
-.news {
-  box-shadow: 3px 5px 5px;
-  opacity: 0.93;
-  background-color: #0b2545;
-}
-
-.main1 {
-  background-image: url(etudiants-connaissant-bonne-reponse.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  /* backdrop-filter: blur(10px); */
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 30px 0;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-section {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.footer-section h4 {
-  font-size: 18px;
+.contact-info h2 {
+  color: #333;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
-ul {
-  list-style: none;
+.contact-info p {
+  font-size: 16px;
+  color: #666;
+}
+
+.contact-info ul {
+  list-style-type: none;
   padding: 0;
 }
 
-ul li {
-  margin-bottom: 8px;
+.contact-info li {
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
-ul li a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.bottom-footer {
-  text-align: center;
-  margin-top: 20px;
-  padding-top: 10px;
-  border-top: 1px solid #555;
-}
-footer a:hover {
-  background-color: white;
-  color: black;
-  padding: 6px;
-  transition: 0.4s;
-  border-radius: 20px;
-}
-/* main2 */
-.container {
-  /* background-color: blue; */
-  padding: 10px;
-  font-family: sans-serif;
+.contact-info li strong {
   font-weight: bold;
-  display: grid;
-  /* grid-template-columns: 100px,100px; */
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-  gap: 10px;
-  text-align: center;
-  margin: 0 auto;
-}
-.child1,
-.child2,
-.child3 {
-  background-color: #0b2545;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 7px 5px 3px;
-}
-.main2 p {
-  color: white;
-}
-.main2 h1 {
-  /* color: #750e21; */
-  color: #8da98dca;
-}
-.main2 i {
-  font-size: 50px;
-  color: black;
-}
-
-@media (max-width: 768px) {
-  .container {
-    width: 750px;
-  }
-  header ul {
-    position: relative;
-    align-items: center;
-  }
-  /* hnaaaaaaaaaaaa */
-  header ul {
-    display: none;
-    background-color: #9bb8cd;
-  }
-  header i:hover + ul {
-    display: block;
-  }
-  header ul:hover {
-    display: block;
-  }
-}
-.fa-solid {
-  color: #0b2545;
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-}
-
-.main2 body {
-  background: #091540;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-/* mai3 apropos */
-
-.h1-main3 {
-  font-family: fantasy;
-  color: #750e21;
-  text-align: center;
-  text-decoration: underline;
-}
-.main3 {
-  /* display: flex; */
-  gap: 20px;
-}
-.apropos {
-  background-color: #9bb8cd;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  border-radius: 20px;
-  border: blue 1px solid;
-  box-shadow: 7px 5px 4px;
-}
-.apropos div {
-  /* width: 100%; */
-  padding: 20px;
-}
-
-.pole1 h2 {
-  font-family: monospace;
-  font-size: 26px;
-}
-.apropos h3 {
-  font-family: cursive;
-  font-size: 16px;
-}
-.apropos img {
-  width: 300px;
-  height: 70%;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-.apropos .apropos p {
-  font-size: 12px;
-}
-
-/* apropos2 */
-.pole2 {
-  background-color: #9bb8cd;
-  display: flex;
-  gap: 10px;
-  border-radius: 20px;
-  border: blue 1px solid;
-  box-shadow: 7px 5px 4px;
-}
-.pole2 div {
-  padding: 20px;
-}
-.apropos2 img {
-  width: 300px;
-  height: 95%;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-.apropos2 h3 {
-  font-family: cursive;
-  font-size: 16px;
-}
-
-/* card programme */
-
-.btn-help {
-  width: 60px;
-  height: 60px;
-  background: #fff;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.7s ease-in-out;
-}
-.btn-help:hover {
-  background: #eee;
-  border-radius: 15px;
-  width: 250px;
-  height: 350px;
-}
-.btn-help i {
-  position: absolute;
-}
-.btn-help:hover {
-  opacity: 0;
-}
-.btn-help i {
-  font-size: 30px;
-  color: #000;
-}
-.text-section {
-  padding: 20px;
-  opacity: 0;
-}
-
-/* main4 */
-.services .parent .service1,
-.service2,
-.service3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 50%;
-  background-color: #eee;
-  padding: 40px;
-  margin: 30px;
-}
-.services h2 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-/* location */
-.location {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-.location h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* last main */
-.last img {
-  width: 400px;
-  height: 400px;
-  gap: 40px;
-  border-radius: 15px;
-}
-.last {
-  background: linear-gradient(#8da98dca, #0b2545);
-}
-
-/* js */
-.black-color-dark {
-  background-color: #1f2544;
-}
-body {
-  transition: 2s;
-}
-.nuit-mode-body {
-  background-color: #000;
-}
-
-/* button style */
-header button {
-  border: none;
-  background-color: transparent;
-}
-#switch {
-  color: #9bb8cd;
-  font-size: 25px;
 }
